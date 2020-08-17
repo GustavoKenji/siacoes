@@ -36,6 +36,8 @@ public class BugReportDAO {
 			}else{
 				return null;
 			}
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -65,6 +67,8 @@ public class BugReportDAO {
 			}
 			
 			return list;
+		}catch(Exception e) {
+   			 //handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -119,6 +123,8 @@ public class BugReportDAO {
 			}
 			
 			return bug.getIdBugReport();
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();

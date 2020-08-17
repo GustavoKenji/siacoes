@@ -35,6 +35,8 @@ public class DepartmentDAO {
 			}else{
 				return null;
 			}
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -65,6 +67,8 @@ public class DepartmentDAO {
 			}
 			
 			return list;
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -95,6 +99,8 @@ public class DepartmentDAO {
 			}
 			
 			return list;
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -151,6 +157,8 @@ public class DepartmentDAO {
 			}
 			
 			return department.getIdDepartment();
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
