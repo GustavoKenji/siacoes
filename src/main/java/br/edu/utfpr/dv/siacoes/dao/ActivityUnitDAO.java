@@ -31,6 +31,8 @@ public class ActivityUnitDAO {
 			}
 			
 			return list;
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -59,6 +61,8 @@ public class ActivityUnitDAO {
 			}else{
 				return null;
 			}
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
@@ -107,6 +111,8 @@ public class ActivityUnitDAO {
 			}
 			
 			return unit.getIdActivityUnit();
+		}catch(Exception e) {
+    			//handle exception
 		}finally{
 			if((rs != null) && !rs.isClosed())
 				rs.close();
